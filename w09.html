@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Масалыга</title>
+    <link rel="stylesheet" href="myweb.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            border: 2px solid #ccc;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+        legend {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 1em;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #000000;
+        }
+        button {
+            width: 48%;
+            padding: 10px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Новосибирский Государственный Университет Экономики и Управления (НИНХ)</p>
+        <p>Кафедра информационный технологий</p>
+      </header>
+    <nav class="global-nav">
+        <a href="index.html">Домашняя страница</a>
+        <a href="w06.html">Резюме</a>
+        <a href="w07.html">Таблица</a>
+        <a href="w11.html">Статья</a>
+        <a href="w09.html">Регистрация</a>
+        <a href="w10.html">Анкета</a>
+    </nav>
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend><b>Регистрация</b></legend>
+                <div>
+                    <label for="fullname">ФИО:</label>
+                    <input type="text" id="fullname" name="fullname" pattern="[A-Za-zА-Яа-яЁё\s]+" required 
+                    title="Введите ваше полное имя на русском или английском">
+                </div>
+                <div>
+                    <label for="age">Возраст:</label>
+                    <input type="number" id="age" name="age" min="16" max="100" required 
+                    title="Введите ваш возраст от 16 до 100">
+                </div>
+                <div>
+                    <label for="country">Страна:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Выберите страну</option>
+                        <option value="RU">Россия</option>
+                        <option value="US">США</option>
+                        <option value="FR">Франция</option>
+                        <option disabled value="UA">Украина</option>
+                    </select>
+                </div>
+                <button type="submit">Зарегистрироваться</button>
+                <button type="reset">Очистить</button>
+            </fieldset>
+        </form>
+    </main>    
+    <footer>
+        <p>2024, Масалыга Илья, masalygaila@gmail.com</p>
+    </footer>
+</body>
+</html>

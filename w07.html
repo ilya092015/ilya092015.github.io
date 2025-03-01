@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">  
+    <title>Масалыга</title>
+    <link rel="stylesheet" href="myweb.css">
+    <style>
+        body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px 0;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td:nth-child(9) 
+{
+    text-align: right;
+    color: black;
+}
+
+td:first-child,
+tfoot td:first-child {
+    text-align: left;
+}
+
+td.max {
+    color: red;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <p>Новосибирский Государственный Университет Экономики и Управления (НИНХ)</p>
+        <p>Кафедра информационный технологий</p>
+      </header>
+    <nav class="global-nav">
+        <a href="index.html">Домашняя страница</a>
+        <a href="w06.html">Резюме</a>
+        <a href="w07.html">Таблица</a>
+        <a href="w11.html">Статья</a>
+        <a href="w09.html">Регистрация</a>
+        <a href="w10.html">Анкета</a>
+    </nav>
+    <main>     
+        <table>
+            <caption>Показатели работы киоска</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">День</th>
+                    <th rowspan="2">t</th>
+                    <th rowspan="2">Цена за шт.(руб.)</th>
+                    <th rowspan="2">Сбыт (шт.)</th>
+                    <th rowspan="2">Выручка (руб.)</th>
+                    <th colspan="2">Затраты (руб.)</th>
+                    <th colspan="2">Прибыль (руб.)</th>
+                </tr>
+                <tr>
+                    <th>Аренда</th>
+                    <th>Бутылки</th>
+                    <th>за день</th>
+                    <th>за штуку</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Суббота</td>
+                    <td class="max">28</td>
+                    <td>1,20</td>
+                    <td class="max">717</td>
+                    <td class="max">860,40</td>
+                    <td>50</td>
+                    <td class="max">322,65</td>
+                    <td class="max">487,75</td>
+                    <td class="max">0,68</td>
+                </tr>
+                <tr>
+                    <td>Воскресенье</td>
+                    <td>21</td>
+                    <td>1,20</td>
+                    <td>474</td>
+                    <td>568,80</td>
+                    <td>50</td>
+                    <td>214,65</td>
+                    <td>304,15</td>
+                    <td>0,44</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Среднее значение или сумма</td>
+                    <td>1,20</td>
+                    <td>3254</td>
+                    <td>1429,20</td>
+                    <td>100</td>
+                    <td>537,30</td>
+                    <td>791,90</td>
+                    <td>0,64</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>    
+    <footer>
+        <p>2024, Масалыга Илья, masalygaila@gmail.com</p>
+    </footer>
+</body>
+
